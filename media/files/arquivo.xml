@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>TECNOLOGIA</LastAuthor>
+  <LastSaved>2020-04-20T09:19:47Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9255</WindowHeight>
+  <WindowWidth>22635</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#0000FF" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#0000FF" ss:Bold="1"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="39" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Width="33"/>
+   <Column ss:AutoFitWidth="0" ss:Width="190.5"/>
+   <Column ss:Index="4" ss:StyleID="s62" ss:Width="53.25"/>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Codigo</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Nome</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sexo</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ADELINO CASSOMA DOMINGOS ABÍLIO</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">AMÉRICO HOSSI VENÂNCIO CATUMUA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ANA PAULA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ANANIAS SAMEKE MAYONDE</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ANTÓNIO FERNANDO FAZ CONTA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">AVELINO CASSINDA SOARES</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">BENUÁRIO KAMELA TCHILANDALA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">CAFUILE JESUS FRANCO</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">CÂNDIDA MARIANA LIVONGUE</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">CONSTANTINO BAILUNDO MITA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">DIONÍSIA CATUMBO SOMA TCHIKAMBI</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">EDIVALDO CALEI KAITA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">EDNA MILAGRES  FERREIRA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">EUGÉNIA NATÁLIA LUÍS</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FAUTINO AVELINO CHIWEYENGUE</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FELICIANA DUVA CAPATA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FELICIANO VASCO ROMÃO JAMBA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FLORINDA NGUEVE CARLOS MANUEL</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">GIDEÃO MBANGO</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">INÁCIO DIMENTE NGUMBE</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOÃO LUÍS CANOA CHINGUI</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOÃO RAIMUNDO BAPTISTA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOSÉ AUXILIO CORREIA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOSÉ DA PAIXÃO FILIPE</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOSÉ FORTUNATO MAMUEL</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOSÉ RAFAEL MIGUEL KANGO</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOSIANE ELIZABETH BAPTISTA DOS SANTOS</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JULIETA AMÉLIA CARLOS</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">MARIA TCHILOMBO CATCHIYO MATOCA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">MARTINHO ANTÓNIO CASSISSA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">MARTINHO SACALEYA YAMBA NGULI</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">MAURÍCIO CAMATI SANGUAHAMA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">MIGUEL KANDJONGO ATENDIDO KAKUARTA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">NILTON JORGE NGOLA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">NJITA ROSALINA PASSAGEM LOFA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">NSIMBA EDNA JOÃO MAYALA</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">SIMÃO FRANCISCO KATIVA KAYOVA</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">SOFIA NACOLENDE CHIPACO</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.4921259845"/>
+    <Footer x:Margin="0.4921259845"/>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

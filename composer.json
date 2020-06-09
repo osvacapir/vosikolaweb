@@ -1,0 +1,19 @@
+{
+    "require": {
+        "smarty/smarty": "~3.1",
+        "phpmailer/phpmailer": "~5.2",
+        "fpdf/fpdf": "^1.82",
+        "shuchkin/simplexlsx": "0.8.15",
+        "coffeecode/datalayer": "^1.0",
+        "dompdf/dompdf": "0.8",
+        "coffeecode/router": "^1.0"
+    },
+
+    "config": {
+        "vendor-dir": "lib/"
+    },
+
+    "autoload": {
+        "classmap": ["model/"]
+    }
+}
