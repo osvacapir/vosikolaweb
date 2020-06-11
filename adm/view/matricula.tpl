@@ -15,8 +15,7 @@
             <span class="text-white bold text-center">
                 <h6>{$TURMA.1.Classe_Designacao} 
                     {$TURMA.1.Designacao}</h6>
-            </span>
-        </div>
+            </span>        </div>
         <div class="col-md-1 text-white bg-gradient-secondary p-2 border-right border-secondary">
             <label class="small text-gray-400">Sala:</label>
             <div class="text-black bold text-center"><h6>{$TURMA.1.Sala_Designacao}</h6></div>
