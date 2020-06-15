@@ -14,6 +14,7 @@
 class Tab {
 
     const
+            PESSOA = Config::BD_PREFIX .'pessoa',
             USER = Config::BD_PREFIX . 'utilizador',
             ALUNO = Config::BD_PREFIX . 'aluno',
             ANO = Config::BD_PREFIX . 'ano_lectivo',
@@ -70,11 +71,11 @@ class Tab {
               SALA = Config::BD_PREFIX .'pedidos_declaracao',
               SALA = Config::BD_PREFIX .'periodo_lectivo',
               SALA = Config::BD_PREFIX .'permissao',
-              SALA = Config::BD_PREFIX .'pessoa',
+
               SALA = Config::BD_PREFIX .'processos_disciplinar',
               SALA = Config::BD_PREFIX .'profissao',
               SALA = Config::BD_PREFIX .'propina',
-              SALA = Config::BD_PREFIX .'provincia',
+           
               SALA = Config::BD_PREFIX .'resultados_final',
               SALA = Config::BD_PREFIX .'tentativa_login',
               SALA = Config::BD_PREFIX .'tipo_avaliacao',
@@ -82,7 +83,8 @@ class Tab {
               SALA = Config::BD_PREFIX .'tipo_servico',
               SALA = Config::BD_PREFIX .'tipos_propina',
               SALA = Config::BD_PREFIX .'tipos_utilizador',
-             */
+             */   
+            PROVINCIA = Config::BD_PREFIX .'provincia',
             TIPO_DECLARACAO = Config::BD_PREFIX .'tipo_declaracao',
             TIPO_USER = Config::BD_PREFIX . 'tipos_utilizador'
 

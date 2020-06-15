@@ -2,7 +2,7 @@
 
 Class Config {
 
-    const SITE_URL = "http://127.0.0.1",
+    const SITE_URL = "http://zeta_1",
             SITE_PASTA = "vosikola",
             //SITE_URL = "https://vosikola.com",
             //SITE_PASTA = "",
@@ -12,9 +12,17 @@ Class Config {
             SITE_TEL = '990000000';
     //INFORMAÇÕES DO BANCO DE DADOS
     const
-            BD_HOST = "127.0.0.1:3366",
+            BD_HOST = "zeta_1:3366",
             BD_USER = "u578573205_osiko",
             BD_BANCO = "u578573205_osiko",
+            BD_HOST_SIMPLES = "zeta_1",
+            BD_PORT= "3366",
+            BD_OPPTION= [
+        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+        PDO::ATTR_CASE => PDO::CASE_NATURAL
+    ],
             //BD_HOST = "sql240.main-hosting.eu",
             //BD_USER = "u578573205_vosiko",
             //BD_BANCO = "u578573205_vosiko",

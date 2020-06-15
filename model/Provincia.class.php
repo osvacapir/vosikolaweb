@@ -1,23 +1,19 @@
-<?php 
-Class Provincia extends Conexao{
-
-    private $Codigo;
-    private $Designacao;
+<?php
+Class Provincia extends \CoffeeCode\DataLayer\DataLayer {
 
 
-    function __construct() {
-        parent::__construct();  
-        $this->setTabela('provincia');
+
+    public function __construct() {
+        //string $entity, array $required, string $primary = 'id', bool $timestamps = true
+        parent::__construct(Tab::PROVINCIA, ['Designacao'], 'Codigo', false);
     }
-    
-      function Preparar($codigo, $Designacao){
-          
+/*
+    function Preparar($codigo, $Designacao) {
+
         $this->SetCodigo($codigo);
         $this->SetDesignacao($Designacao);
-               
-      }
-    
-    
+    }
+
     function getCodigo() {
         return $this->Codigo;
     }
@@ -26,13 +22,12 @@ Class Provincia extends Conexao{
         return $this->Designacao;
     }
 
-        
     function GetProvincia() {
         $query = "SELECT *FROM {$this->tabela} ORDER BY Designacao ASC";
         $this->ExecutaSQL($query);
         $this->GetLista();
     }
-    
+
     function GetProvinciaID($id) {
         $query = "SELECT *FROM {$this->tabela} ";
         $query .= "WHERE Codigo=:Codigo";
@@ -40,7 +35,7 @@ Class Provincia extends Conexao{
         $this->ExecutaSQL($query, $params);
         $this->GetLista();
     }
-    
+
     private function GetLista() {
         $i = 1;
         while ($lista = $this->ListarDados()):
@@ -50,7 +45,7 @@ Class Provincia extends Conexao{
             $i++;
         endwhile;
     }
-    
+
     function Grava($obj) {
         if (isset($obj['Codigo']) && $obj['Codigo'] > 0) {
             return $this->Editar($obj, array('Codigo' => $obj['Codigo']), $this->tabela);
@@ -59,7 +54,7 @@ Class Provincia extends Conexao{
             return $this->Inserir($obj);
         }
     }
-    
+
     function Apaga($id) {
         $this->GetProvinciaID($id);
         return $this->Apagar(array("Codigo" => $id));
@@ -75,7 +70,7 @@ Class Provincia extends Conexao{
             $this->designacao = $designacao;
         endif;
     }
-    
+
     function setCodigo($Codigo) {
         $this->Codigo = $Codigo;
     }
@@ -84,6 +79,7 @@ Class Provincia extends Conexao{
         $query = $this->Primeiro($this->ExecutaSQL("SELECT *FROM {$this->tabela} WHERE Codigo='{$obj->GetCodigo()}'"));
         $this->setObject($obj, $query);
     }
-       
+*/
 }
- ?>
+
+?>

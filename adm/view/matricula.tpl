@@ -1,4 +1,5 @@
 <!-- Page Heading -->
+
 <div class="d-sm-flex align-items-center justify-content-between mb-1">
     <h6 class="h6 mb-0 font-weight-bold text-primary text-gray-800">Matrículas</h6>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
@@ -47,7 +48,7 @@
     <form class="form" action="" method="POST" enctype="multipart/form-data"> 
         <div class="text-white mt-3">
             <button class="btn btn-success ml-2" type="submit" name="bt_gravar"> Actualizar</button>
-             <button class="btn btn-danger ml-2" type="submit" name="bt_apaga_m">Apagar em massa</button>
+            <button class="btn btn-danger ml-2" type="submit" name="bt_apaga_m">Apagar em massa</button>
         </div>
         <div class="card-body">
             <!--div class="table-responsive"-->
@@ -82,7 +83,7 @@
                         <input type = "hidden" name = "codigo_{$P@key}" value="{$P.Codigo}"/>
                         <tr>
                             <td  class="text-center italic">
-                              {$P.Codigo}  <span><input class="" type = "checkbox" name = "check[]" value="{$P.Codigo}"/>  {$P@key}</span>
+                                {$P.Codigo}  <span><input class="" type = "checkbox" name = "check[]" value="{$P.Codigo}"/>  {$P@key}</span>
                             </td>
                             <td class="text-center italic">
                                 <label selected="{$P.Sexo}">{$P.Sexo}</label>
@@ -126,8 +127,8 @@
                                 </select>
                             </td>    
                             <td>
-                                <a type="button"  href="#" data-toggle="modal" data-target="#apagaModal" class="btn btn-outline-primary"> <i class="fas fa-child"></i></a>
-                                <a type="button" href="{$PAG_MATRICULA}/{$P.Codigo}" class=" btn btn-outline-danger" style="margin-left: 10px"> <i class="fas fa-times"></i></a>
+                                <a type="button"  href="#" data-toggle="modal" data-target="#apagaModal" class="btn btn-outline-primary"> <i class="fas fa-arr"></i></a>
+                                <a type="button" href="{$PAG_MATRICULA}/{$P.Codigo}" class=" btn btn-outline-danger" style="margin-left: 10px"> <i class="fas fa-times fa-"></i></a>
                             </td> 
                         </tr> 
                     </a>
@@ -139,31 +140,33 @@
         </div>
     </form>
     {if $MATRICULADOS|@count le $QTD_V} {/if}
-    <div class="mt-2 border-top">
-        <form method="POST" enctype="multipart/form-data">
-            <label>Seleccione o ficheiro <a href="#">F_100(baixar)</a></label>
-            <input type="file" name="arquivo">
-            <button class="btn-primary" type="submit" name="buscar">Carregar arquivo</button>
-        </form>
-        <form method="POST" enctype="multipart/form-data">
-            <table>
-                <thead>
-                <th>Codigo</th>
-                <th>Nome</th>
-                <th>Sexo</th>
-                </thead>
-                {foreach from=$DADOS item=P}  
-                    <tr>
-                        <td><input  name="Cod_{$P@key}" value="{$P.Codigo}"/></td>
-                        <td><input name="Nome_{$P@key}" value="{$P.Nome}"/></td>
-                        <td><input name="Sexo_{$P@key}" value="{$P.Sexo}"/></td>
-                    </tr>
-                {/foreach}
-                <input  type="hidden" name="qtd" value="{$DADOS|@count}"/>
+   
+        <div class="mt-2 border-top">
+            <form method="POST" enctype="multipart/form-data">
+                <label>Seleccione o ficheiro <a href="#">F_100(baixar)</a></label>
+                <input type="file" name="arquivo" required accept=".xls,.xlsx">
+                <button class="btn-primary" type="submit" name="buscar">Carregar arquivo</button>
+            </form>
+             {if $DADOS|@count > 0}
+            <form method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    </thead>
+                    {foreach from=$DADOS item=P}  
+                        <tr>
+                            <td><input  name="Cod_{$P@key}" value="{$P.NUMERO}"/></td>
+                            <td><input type="text" name="Nome_{$P@key}" value="{$P.NOME}"/></td>
+                            <td><input type="text" name="Sexo_{$P@key}" value="{$P.SEXO}"/></td>
+                        </tr>
+                    {/foreach}
+                    <input  type="hidden" name="qtd" value="{$DADOS|@count}"/>
 
-            </table>  
-            <button class="btn-secondary" type="submit" name="bt_adicionar">Adicionar à turma</button>
-        </form>
-    </div>
+                </table>  
+                <button class="btn-secondary" type="submit" name="bt_adicionar">Adicionar à turma</button>
+            </form>
+        </div>
+    {/if}
 </div>
-{$MODAL}

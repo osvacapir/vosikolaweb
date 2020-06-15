@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-06-09 11:51:16
+/* Smarty version 3.1.36, created on 2020-06-11 14:11:07
   from 'C:\xampp\htdocs\vosikola\adm\view\adm_index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5edf69a4234a52_02871826',
+  'unifunc' => 'content_5ee22d6b318891_13206849',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edf69a4234a52_02871826 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee22d6b318891_13206849 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>

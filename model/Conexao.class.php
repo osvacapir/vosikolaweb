@@ -27,7 +27,9 @@ Class Conexao extends Config {
     private function Conectar() {
         $options = array(
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+            PDO::ATTR_CASE => PDO::CASE_NATURAL,
         );
         $link = new PDO("mysql:host={$this->host};dbname={$this->banco}",
                 $this->user, $this->senha, $options);
@@ -54,31 +56,28 @@ Class Conexao extends Config {
             return $this->pdo->commit();
         } catch (PDOException $exc) {
             $this->setAlert('Erro de Com o Submit</br><h2>Codigo</h2></br>' . $exc->getCode() . '</br> <h2>Message:</h2>' . $exc->getMessage());
-            // echo '' . $this->alert;
+// echo '' . $this->alert;
         }
     }
 
-    function ExecutaSQL_massa($lista) {
-
+    function ExecutaSQL_massa($lista_QUERIES) {
+        echo '<pre>';
+        print_r($lista_QUERIES);
+        echo '</pre>';
         $this->pdo = $this->Conectar();
         try {
             $this->pdo->beginTransaction();
-            foreach ($lista as $key => $value) {
-
-                $this->obj = $this->pdo->prepare($value[$key]);
-                if (!is_null($lista[$key])) {
-                    if (count($params) > 0) {
-                        /** @var type $key */
-                        foreach ($params as $key => $value) {
-                            $this->obj->bindvalue($key, $value);
-                        }
-                    }
-                }
-                $this->obj->execute();
-            }
+            $Q1 = $this->pdo->prepare($lista_QUERIES[0]);
+            //if (!is_null($Q1))
+            $Q1->execute();
+            $Q2 = $this->pdo->prepare($lista_QUERIES[1]);
+            $Q2->execute();
+            $Q3 = $this->pdo->prepare($lista_QUERIES[2]);
+            $Q3->execute();
             return $this->pdo->commit();
         } catch (PDOException $exc) {
             $this->setAlert('Erro de Com o Submit\n' . $exc->getMessage() . '\n<h2> Erro ao conectar com o banco de dados! </h2>');
+            return $this->pdo->rollBack();
             echo '' . $this->alert;
         }
     }
@@ -207,6 +206,12 @@ Class Conexao extends Config {
         return $this->obj->fetchObject();
     }
 
+    function Existe($query, $campos_value) {
+        $query = "SELECT *FROM {$this->tabela}";
+        $this->ExecutaSQL($query, $campos_value);
+        return $this->obj->fetchObject();
+    }
+
     function UltimoID() {
         $query = "SELECT LAST_INSERT_ID FROM {$this->tabela}";
         $this->ExecutaSQL($query, $campos_value);
@@ -222,6 +227,7 @@ Class Conexao extends Config {
     }
 
     function Editar($obj, $cond) {
+
         foreach ($obj as $ind => $val) {
             $dados[] = "{$ind}= " . (is_null($val) ? " NULL " : "'{$val}'");
         }

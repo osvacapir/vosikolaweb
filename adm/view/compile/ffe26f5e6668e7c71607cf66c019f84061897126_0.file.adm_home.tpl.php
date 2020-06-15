@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-06-09 15:51:40
+/* Smarty version 3.1.36, created on 2020-06-11 16:08:53
   from 'C:\xampp\htdocs\vosikola\adm\view\adm_home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5edfa1fcdb4d51_43984763',
+  'unifunc' => 'content_5ee24905edb940_52288862',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edfa1fcdb4d51_43984763 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee24905edb940_52288862 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h5 class="h3 mb-0 text-gray-800">Informação Síntese</h5>

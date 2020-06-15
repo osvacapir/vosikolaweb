@@ -21,7 +21,7 @@ Class Pessoa extends Conexao{
 
     function __construct() {
         parent::__construct(); 
-        $this->setTabela('pessoa');
+        $this->setTabela(Tab::PESSOA);
     }
     
     function PrepararPessoa(
@@ -140,8 +140,7 @@ Class Pessoa extends Conexao{
     function GravaP($obj) {
         if (isset($obj['Codigo']) && $obj['Codigo'] > 0) {
             return $this->Editar($obj, array('Codigo' => $obj['Codigo']), $this->tabela);
-        } elseif (!isset($valores['Codigo'])) {
-        
+        } elseif (!isset($valores['Codigo'])) {        
             unset($obj['Codigo']);
             return $this->Inserir($obj);
         }

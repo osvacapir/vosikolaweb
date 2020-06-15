@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-06-09 15:56:17
+/* Smarty version 3.1.36, created on 2020-06-12 14:24:48
   from 'C:\xampp\htdocs\vosikola\adm\view\matricula.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5edfa311c598f5_25427636',
+  'unifunc' => 'content_5ee38220da2959_98184483',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4767624997a8bd5f97edd88fdd34bc78a27692fa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\vosikola\\adm\\view\\matricula.tpl',
-      1 => 1591714573,
+      1 => 1591968278,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edfa311c598f5_25427636 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee38220da2959_98184483 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Page Heading -->
+
 <div class="d-sm-flex align-items-center justify-content-between mb-1">
     <h6 class="h6 mb-0 font-weight-bold text-primary text-gray-800">Matrículas</h6>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
@@ -41,8 +42,7 @@ function content_5edfa311c598f5_25427636 (Smarty_Internal_Template $_smarty_tpl)
  
                     <?php echo $_smarty_tpl->tpl_vars['TURMA']->value[1]['Designacao'];?>
 </h6>
-            </span>
-        </div>
+            </span>        </div>
         <div class="col-md-1 text-white bg-gradient-secondary p-2 border-right border-secondary">
             <label class="small text-gray-400">Sala:</label>
             <div class="text-black bold text-center"><h6><?php echo $_smarty_tpl->tpl_vars['TURMA']->value[1]['Sala_Designacao'];?>
@@ -80,7 +80,7 @@ function content_5edfa311c598f5_25427636 (Smarty_Internal_Template $_smarty_tpl)
     <form class="form" action="" method="POST" enctype="multipart/form-data"> 
         <div class="text-white mt-3">
             <button class="btn btn-success ml-2" type="submit" name="bt_gravar"> Actualizar</button>
-             <button class="btn btn-danger ml-2" type="submit" name="bt_apaga_m">Apagar em massa</button>
+            <button class="btn btn-danger ml-2" type="submit" name="bt_apaga_m">Apagar em massa</button>
         </div>
         <div class="card-body">
             <!--div class="table-responsive"-->
@@ -123,7 +123,7 @@ $__foreach_P_0_saved = $_smarty_tpl->tpl_vars['P'];
 "/>
                         <tr>
                             <td  class="text-center italic">
-                              <?php echo $_smarty_tpl->tpl_vars['P']->value['Codigo'];?>
+                                <?php echo $_smarty_tpl->tpl_vars['P']->value['Codigo'];?>
   <span><input class="" type = "checkbox" name = "check[]" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['Codigo'];?>
 "/>  <?php echo $_smarty_tpl->tpl_vars['P']->key;?>
 </span>
@@ -202,10 +202,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                 </select>
                             </td>    
                             <td>
-                                <a type="button"  href="#" data-toggle="modal" data-target="#apagaModal" class="btn btn-outline-primary"> <i class="fas fa-child"></i></a>
+                                <a type="button"  href="#" data-toggle="modal" data-target="#apagaModal" class="btn btn-outline-primary"> <i class="fas fa-arr"></i></a>
                                 <a type="button" href="<?php echo $_smarty_tpl->tpl_vars['PAG_MATRICULA']->value;?>
 /<?php echo $_smarty_tpl->tpl_vars['P']->value['Codigo'];?>
-" class=" btn btn-outline-danger" style="margin-left: 10px"> <i class="fas fa-times"></i></a>
+" class=" btn btn-outline-danger" style="margin-left: 10px"> <i class="fas fa-times fa-"></i></a>
                             </td> 
                         </tr> 
                     </a>
@@ -220,50 +220,51 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
     </form>
     <?php if (count($_smarty_tpl->tpl_vars['MATRICULADOS']->value) <= $_smarty_tpl->tpl_vars['QTD_V']->value) {?> <?php }?>
-    <div class="mt-2 border-top">
-        <form method="POST" enctype="multipart/form-data">
-            <label>Seleccione o ficheiro <a href="#">F_100(baixar)</a></label>
-            <input type="file" name="arquivo">
-            <button class="btn-primary" type="submit" name="buscar">Carregar arquivo</button>
-        </form>
-        <form method="POST" enctype="multipart/form-data">
-            <table>
-                <thead>
-                <th>Codigo</th>
-                <th>Nome</th>
-                <th>Sexo</th>
-                </thead>
-                <?php
+   
+        <div class="mt-2 border-top">
+            <form method="POST" enctype="multipart/form-data">
+                <label>Seleccione o ficheiro <a href="#">F_100(baixar)</a></label>
+                <input type="file" name="arquivo" required accept=".xls,.xlsx">
+                <button class="btn-primary" type="submit" name="buscar">Carregar arquivo</button>
+            </form>
+             <?php if (count($_smarty_tpl->tpl_vars['DADOS']->value) > 0) {?>
+            <form method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    </thead>
+                    <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['DADOS']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->key => $_smarty_tpl->tpl_vars['P']->value) {
 $_smarty_tpl->tpl_vars['P']->do_else = false;
 $__foreach_P_3_saved = $_smarty_tpl->tpl_vars['P'];
 ?>  
-                    <tr>
-                        <td><input  name="Cod_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
-" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['Codigo'];?>
+                        <tr>
+                            <td><input  name="Cod_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['NUMERO'];?>
 "/></td>
-                        <td><input name="Nome_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
-" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['Nome'];?>
+                            <td><input type="text" name="Nome_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['NOME'];?>
 "/></td>
-                        <td><input name="Sexo_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
-" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['Sexo'];?>
+                            <td><input type="text" name="Sexo_<?php echo $_smarty_tpl->tpl_vars['P']->key;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['SEXO'];?>
 "/></td>
-                    </tr>
-                <?php
+                        </tr>
+                    <?php
 $_smarty_tpl->tpl_vars['P'] = $__foreach_P_3_saved;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                <input  type="hidden" name="qtd" value="<?php echo count($_smarty_tpl->tpl_vars['DADOS']->value);?>
+                    <input  type="hidden" name="qtd" value="<?php echo count($_smarty_tpl->tpl_vars['DADOS']->value);?>
 "/>
 
-            </table>  
-            <button class="btn-secondary" type="submit" name="bt_adicionar">Adicionar à turma</button>
-        </form>
-    </div>
+                </table>  
+                <button class="btn-secondary" type="submit" name="bt_adicionar">Adicionar à turma</button>
+            </form>
+        </div>
+    <?php }?>
 </div>
-<?php echo $_smarty_tpl->tpl_vars['MODAL']->value;?>
-
 <?php }
 }
