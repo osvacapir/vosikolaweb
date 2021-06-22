@@ -1,7 +1,7 @@
 {
     "require": {
         "smarty/smarty": "~3.1",
-        "phpmailer/phpmailer": "~5.2",      
+        "phpmailer/phpmailer": "~6.5",      
         "shuchkin/simplexlsx": "0.8.15",
         "coffeecode/datalayer": "^1.0",
         "dompdf/dompdf": "0.8",
