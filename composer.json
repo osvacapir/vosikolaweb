@@ -4,7 +4,7 @@
         "phpmailer/phpmailer": "~5.2",      
         "shuchkin/simplexlsx": "0.8.15",
         "coffeecode/datalayer": "^1.0",
-        "dompdf/dompdf": "0.8",
+        "dompdf/dompdf": "2.0.0",
         "coffeecode/router": "^1.0"
     },
 
